@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: url("../img/beach-bora-bora-calm-753626.jpg"); */
+    background: black;
+    background-size: cover;
+    font-family: Kaushan Script;
+    justify-content: center;
+    height: 1200px;
+  }
+  .neon {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 16px;
+    font-size: 5em;
+    color: rgb(75, 241, 9);
+    text-shadow: 0 0 20px rgb(8, 204, 194);
+    text-transform: capitalize;
+    opacity: .7;
+  }
+  .neon::after {
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 0 20px;
+    z-index: -1;
+    color: rgb(230, 18, 212);
+    filter: blur(15px);
+  }
+  .neon:before {
+    content: " ";
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    background: rgb(241, 5, 5);
+    filter: blur(60px);
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  .im {
+    height: 1200px;
+    position: absolute;
+    width: 100%;
+    background: url("../img/bhai.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: .8;
+  }
+  
